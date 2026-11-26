@@ -12,16 +12,12 @@
 .swiftpm/
 migrate_working_dir/
 
-# IntelliJ related
+# IDE related (IntelliJ / Android Studio / VS Code)
 *.iml
 *.ipr
 *.iws
 .idea/
-
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
-#.vscode/
+.vscode/
 
 # Flutter/Dart/Pub related
 **/doc/api/
@@ -34,6 +30,7 @@ migrate_working_dir/
 .pub/
 **/build/
 /coverage/
+**/Flutter/ephemeral/
 
 # Local configuration and secrets
 .env
@@ -44,16 +41,71 @@ migrate_working_dir/
 **/*.keystore
 **/*.jks
 
-# Symbolication related
+# Symbolication & Obfuscation related
 app.*.symbols
-
-# Obfuscation related
 app.*.map.json
 
-# Android Studio will place build artifacts here
+# Widget Preview related
+.widget_preview/
+
+# Android / Gradle / Kotlin
+/android/.gradle/
+/android/.kotlin/
+**/.gradle/
+**/.kotlin/
+/android/captures/
+/android/gradlew
+/android/gradlew.bat
+/android/**/gradle-wrapper.jar
+**/GeneratedPluginRegistrant.java
+/android/**/.cxx/
 /android/app/debug
 /android/app/profile
 /android/app/release
 
-# Widget Preview related
-.widget_preview/
+# iOS / macOS / Xcode
+**/dgph
+*.mode1v3
+*.mode2v3
+*.moved-aside
+*.pbxuser
+*.perspectivev3
+!default.mode1v3
+!default.mode2v3
+!default.pbxuser
+!default.perspectivev3
+/ios/**/*sync/
+/ios/**/.sconsign.dblite
+/ios/**/.tags*
+**/.vagrant/
+**/DerivedData/
+/ios/**/Icon?
+**/Pods/
+**/.symlinks/
+/ios/**/profile
+**/xcuserdata/
+**/.generated/
+/ios/Flutter/App.framework
+/ios/Flutter/Flutter.framework
+/ios/Flutter/Flutter.podspec
+/ios/Flutter/Generated.xcconfig
+/ios/Flutter/app.flx
+/ios/Flutter/app.zip
+/ios/Flutter/flutter_assets/
+/ios/Flutter/flutter_export_environment.sh
+/ios/ServiceDefinitions.json
+/ios/Runner/GeneratedPluginRegistrant.*
+
+# Linux
+/linux/**/flutter/ephemeral
+
+# Windows / Visual Studio
+/windows/**/flutter/ephemeral/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+/windows/**/x64/
+/windows/**/x86/
+/windows/**/*.[Cc]ache
+!/windows/**/*.[Cc]ache/
